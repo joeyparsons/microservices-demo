@@ -8,6 +8,7 @@ spec:
     tier: "1"
     nodejs: "12.20.0"
     group: payments
+    deployment: kubernetes
     protocol: grpc
   description: Charges the given credit card info with the given amount and returns a transaction ID
   contact:

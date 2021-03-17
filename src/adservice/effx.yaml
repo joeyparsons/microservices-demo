@@ -7,6 +7,7 @@ spec:
     java: "1.8ru131"
     group: core
     protocol: http
+    deployment: kubernetes
   description: Provides text ads based on given context words
   contact:
     email: frontend@effx.com

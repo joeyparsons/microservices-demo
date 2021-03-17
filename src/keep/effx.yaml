@@ -8,6 +8,7 @@ spec:
     tier: "0"
     rust: "1.48"
     group: infra
+    deployment: ec2
     protocol: grpc
   description: writes to backup log and rotates backups daily and continually
   contact:

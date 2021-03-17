@@ -8,6 +8,7 @@ spec:
     tier: "3"
     python: "3.7"
     group: shopping
+    deployment: kubernetes
     protocol: http
   description: Recommends other products based on what's given in the cart
   contact:

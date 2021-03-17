@@ -5,6 +5,7 @@ spec:
   annotations:
     effx.io/owned-by: analytics
   tags:
+    deployment: ec2
     go: "1.13"
   description: flips relationships between objects continually
   contact:

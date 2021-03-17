@@ -7,6 +7,7 @@ spec:
   tags:
     tier: "0"
     group: core
+    deployment: kubernetes
     protocol: http
   description: Exposes an HTTP server to serve the website
   contact:

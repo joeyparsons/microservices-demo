@@ -7,6 +7,7 @@ spec:
   tags:
     tier: "0"
     nodejs: "12.20.0"
+    deployment: kubernetes
     group: payments
     protocol: grpc
   description: Converts one money amount to another currency. Uses real values fetched from European Central Bank. It's the highest QPS service

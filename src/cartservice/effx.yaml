@@ -8,6 +8,7 @@ spec:
     tier: "0"
     csharp: "5.0.101"
     group: shopping
+    deployment: kubernetes
     protocol: grpc
   description: Stores the items in the user's shopping cart in Redis and retrieves it
   contact:

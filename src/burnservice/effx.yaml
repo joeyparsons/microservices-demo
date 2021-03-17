@@ -4,6 +4,7 @@ spec:
   name: burnservice
   tags:
     go: "1.13"
+    deployment: ec2
   description: burn service
   contact:
     email: backend@effx.com

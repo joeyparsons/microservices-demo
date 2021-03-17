@@ -6,6 +6,7 @@ spec:
     effx.io/owned-by: analytics
   tags:
     tier: "2"
+    deployment: kubernetes
     python: "3.7"
     group: shopping
     protocol: grpc

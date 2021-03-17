@@ -9,6 +9,7 @@ spec:
     go: "1.14"
     group: core
     protocol: grpc
+    deployment: kubernetes
   description: High level account information for corporate accountservice and associated user relationship info
   contact:
     onCall:

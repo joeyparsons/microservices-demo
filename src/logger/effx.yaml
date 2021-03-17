@@ -8,6 +8,7 @@ spec:
     tier: "3"
     go: "1.13"
     group: infra
+    deployment: lambda
     protocol: http
   description: stores and provides analytics on application logs
   contact:

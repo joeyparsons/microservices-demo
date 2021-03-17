@@ -7,6 +7,7 @@ spec:
   tags:
     tier: "2"
     python: "3.7"
+    deployment: kubernetes
     group: analytics
     protocol: http
   description: Calculates analytics based on user location, purchases and more

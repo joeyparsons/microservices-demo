@@ -8,6 +8,7 @@ spec:
     tier: "0"
     go: "1.14"
     group: core
+    deployment: kubernetes
     protocol: grpc
   description: Receives query filters and returns search results depending on type
   contact:
