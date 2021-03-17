@@ -1,0 +1,46 @@
+kind: service
+version: effx/v1
+spec:
+  name: frontend
+  annotations:
+    effx.io/owned-by: frontend
+  tags:
+    tier: "0"
+    group: core
+    protocol: http
+  description: Exposes an HTTP server to serve the website
+  contact:
+    onCall:
+      label: PagerDuty rotation
+      url: 'https://pagerduty.com/frontend-rotation'
+    email: frontend@effx.com
+    chat:
+      url: 'https://zanefactory.slack.com/archives/C01GZGFCSBW'
+      label: '#frontend'
+    issueTracker:
+      label: clubhouse.io
+      url: 'https://app.clubhouse.io/zf/projects'
+  linkGroups:
+    - label: Dashboards
+      links:
+        - label: frontend status
+          url: 'https://api.zanefactory.com'
+        - label: APM
+          url: 'https://app.datadoghq.com/apm/services'
+    - label: Version Control
+      links:
+        - label: Github
+          url: 'https://github.com/joeyparsons/microservices-demo/tree/master/src/frontend'
+    - label: Runbooks
+      links:
+        - label: on-call runbook
+          url: 'https://www.notion.so/microservices-demo-62e0fb0e92a9438e89a844849b067875'
+  dependencies:
+    manual:
+      - name: cartservice
+      - name: recommendationservice
+      - name: productcatalogservice
+      - name: currencyservice
+      - name: checkoutservice
+      - name: adservice
+      - name: shippingservice

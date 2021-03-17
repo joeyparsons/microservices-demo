@@ -1,0 +1,14 @@
+kind: service
+version: effx/v1
+spec:
+  name: burnservice
+  tags:
+    go: "1.13"
+  description: burn service
+  contact:
+    email: backend@effx.com
+  linkGroups:
+    - label: Version Control
+      links:
+        - label: Github
+          url: 'https://github.com/joeyparsons/microservices-demo/tree/master/src/burnservice'

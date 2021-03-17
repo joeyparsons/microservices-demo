@@ -1,0 +1,36 @@
+kind: service
+version: effx/v1
+spec:
+  name: cartservice
+  annotations:
+    effx.io/owned-by: frontend
+  tags:
+    tier: "0"
+    csharp: "5.0.101"
+    group: shopping
+    protocol: grpc
+  description: Stores the items in the user's shopping cart in Redis and retrieves it
+  contact:
+    onCall:
+      label: PagerDuty rotation
+      url: 'https://pagerduty.com/frontend-rotation'
+    email: frontend@effx.com
+    chat:
+      url: 'https://zanefactory.slack.com/archives/C01GZGFCSBW'
+      label: '#frontend'
+    issueTracker:
+      label: clubhouse.io
+      url: 'https://app.clubhouse.io/zf/projects'
+  linkGroups:
+    - label: Dashboards
+      links:
+        - label: APM
+          url: 'https://app.datadoghq.com/apm/services'
+    - label: Version Control
+      links:
+        - label: Github
+          url: 'https://github.com/joeyparsons/microservices-demo/tree/master/src/cartservice'
+    - label: Runbooks
+      links:
+        - label: on-call runbook
+          url: 'https://www.notion.so/microservices-demo-62e0fb0e92a9438e89a844849b067875'

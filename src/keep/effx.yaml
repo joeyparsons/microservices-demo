@@ -1,0 +1,39 @@
+kind: service
+version: effx/v1
+spec:
+  name: keep
+  annotations:
+    effx.io/owned-by: infra
+  tags:
+    tier: "0"
+    rust: "1.48"
+    group: infra
+    protocol: grpc
+  description: writes to backup log and rotates backups daily and continually
+  contact:
+    onCall:
+      label: PagerDuty rotation
+      url: 'https://pagerduty.com/backend-rotation'
+    email: infra@effx.com
+    chat:
+      url: 'https://zanefactory.slack.com/archives/C01GQ92H5E1'
+      label: '#ops'
+    issueTracker:
+      label: clubhouse.io
+      url: 'https://app.clubhouse.io/zf/projects'
+  linkGroups:
+    - label: Dashboards
+      links:
+        - label: Grafana Metrics
+          url: 'https://grafana.com/services/dashboard'
+    - label: Version Control
+      links:
+        - label: Github
+          url: 'https://github.com/joeyparsons/microservices-demo/tree/master/src/keep'
+    - label: Runbooks
+      links:
+        - label: on-call runbook
+          url: 'https://paper.dropbox.com/doc/microservices-demo--BBPoTrMKKzAd3rxAqb3dlcAvAQ-op1iowm6NzSAlf9I48U8O'
+  dependencies:
+    manual:
+      - name: logger
