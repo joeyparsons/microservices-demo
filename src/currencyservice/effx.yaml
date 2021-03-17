@@ -1,0 +1,36 @@
+kind: service
+version: effx/v1
+spec:
+  name: currencyservice
+  annotations:
+    effx.io/owned-by: backend
+  tags:
+    tier: "0"
+    nodejs: "12.20.0"
+    group: payments
+    protocol: grpc
+  description: Converts one money amount to another currency. Uses real values fetched from European Central Bank. It's the highest QPS service
+  contact:
+    onCall:
+      label: PagerDuty rotation
+      url: 'https://pagerduty.com/backend-rotation'
+    email: backend@effx.com
+    chat:
+      url: 'https://zanefactory.slack.com/archives/C01GQ92H5E1'
+      label: '#backend'
+    issueTracker:
+      label: clubhouse.io
+      url: 'https://app.clubhouse.io/zf/projects'
+  linkGroups:
+    - label: Dashboards
+      links:
+        - label: Grafana Metrics
+          url: 'https://grafana.com/services/dashboard'
+    - label: Version Control
+      links:
+        - label: Github
+          url: 'https://github.com/joeyparsons/microservices-demo/tree/master/src/currencyservice'
+    - label: Runbooks
+      links:
+        - label: on-call runbook
+          url: 'https://paper.dropbox.com/doc/microservices-demo--BBPoTrMKKzAd3rxAqb3dlcAvAQ-op1iowm6NzSAlf9I48U8O'
