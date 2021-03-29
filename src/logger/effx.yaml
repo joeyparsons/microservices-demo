@@ -10,7 +10,7 @@ spec:
     group: infra
     deployment: lambda
     protocol: http
-  description: stores and provides analytics on application logs
+  description: stores and provides analytics on application specific logs
   contact:
     onCall:
       label: PagerDuty rotation
