@@ -40,5 +40,5 @@ spec:
       - name: accountservice
       - name: userservice
       - name: productcatalogservice
-      - name: recommendationsservice
+      - name: recommendationservice
       - name: adservice
