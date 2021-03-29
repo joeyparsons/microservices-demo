@@ -9,7 +9,7 @@ spec:
     group: core
     deployment: kubernetes
     protocol: http
-  description: Exposes an HTTP server to serve the website
+  description: Exposes an HTTP server to serve the web site
   contact:
     onCall:
       label: PagerDuty rotation
