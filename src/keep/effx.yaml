@@ -10,7 +10,7 @@ spec:
     group: infra
     deployment: ec2
     protocol: grpc
-  description: writes to backup log and rotates backups daily and continually
+  description: writes to backup log and rotates backups daily
   contact:
     onCall:
       label: PagerDuty rotation
