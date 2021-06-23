@@ -7,7 +7,7 @@ spec:
   tags:
     deployment: ec2
     go: "1.13"
-  description: flips relationships between objects continually
+  description: flips relationships between objects continually and masterfully
   contact:
     email: analytics@effx.com
     issueTracker:
